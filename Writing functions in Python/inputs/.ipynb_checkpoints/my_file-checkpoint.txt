@@ -1,0 +1,2 @@
+This is a sample text file.
+It is used for demonstrating the use of a context manager.
