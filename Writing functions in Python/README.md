@@ -11,7 +11,7 @@ def parent():
     return child
 ```
 ***
-### `Nonlocal variables`
+### Nonlocal variables
 #### A `nonlocal variable` is a variable defined in the parent function that are used by the child function.
 
 ```python
@@ -53,3 +53,17 @@ def parent(arg_1, arg_2):
 new_function = parent(3, 4)
 
 print([cell.cell_contents for cell in new_function.__closure__])
+```
+
+### Decorators.
+#### A `decorator` is a wrapper that is placed around a function to modify the `behaviour` of that function.
+
+```python
+
+def double_args(func):
+    ...
+    
+@double_args
+def multiply(a, b):
+    return a * b
+```
