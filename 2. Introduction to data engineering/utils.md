@@ -1,7 +1,7 @@
 ### Inserting records in a database from a .sql file.
 
 #### 1. Create the database using postgres commands.
-```postgres
+```sql
 postgres=# CREATE DATABASE datacamp;
 ```
 
@@ -12,6 +12,6 @@ psql -h localhost -U postgres datacamp < inputs/datacamp_application.sql
 ```
 
 #### Change postgres password.
-```postgres
+```sql
 ALTER USER user_name WITH PASSWORD 'new_password';
 ```
